@@ -1,80 +1,66 @@
 import React from 'react'
+import './navbar.css'
 
 const Navbar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary" id="nav">
-                <div className="container-fluid">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+            <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                <div className="container-fluid colornav">
+                    <img src="img/icon.png" height="50px" alt="Logo" />
+                    <a className="navbar-brand" href="#">
+                        <strong>educARse</strong>
+                    </a>
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02"
+                        aria-controls="navbarTogglerDemo02"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
                         <span className="navbar-toggler-icon"></span>
                     </button>
-
-
-                    <div className="col-2">
-                        <img src="/img/icon.png" width="60px" />
-                        <a href="/" className="text-decoration-none text-dark ">
-                            <strong className="align-content-lg-center">educARse</strong></a>
-                    </div>
-
-
-                    <div className="dropdown" id="mas-dropdown-navbar">
-                        <a href="#" className="d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <strong>MÁS</strong>
-                        </a>
-                        <ul className="dropdown-menu dropdown-menu-light text-small shadow" id="profile-dropdown">
-                            <li><a className="dropdown-item" href="#">Explorar</a></li>
-                            <li>
-                                <hr className="dropdown-divider" />
+                    <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="#">
+                                    Explorar
+                                </a>
                             </li>
-                            <li><a className="dropdown-item" href="#">Favoritos</a></li>
-                            <li>
-                                <hr className="dropdown-divider" />
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">
+                                    Ayuda
+                                </a>
                             </li>
-                            <li><a className="dropdown-item" href="#">Ayuda</a></li>
                         </ul>
-                    </div>
+                        <div className="container-fluid">
+                            <div className="row">
+                                <div className="col-4 mb-2 mb-lg-0">
+                                    <form className="d-flex" role="search">
+                                        <input
+                                            className="form-control"
+                                            type="search"
+                                            placeholder="Search"
+                                            aria-label="Search"
+                                        />
+                                    </form>
+                                </div>
 
-
-
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-
-                        <form className="d-flex" id="search-container">
-                            <div className="input-wrapper">
-                                <input type="search" className="input" placeholder="Search" />
-                                <svg xmlns="http://www.w3.org/2000/svg" className="input-icon" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                        clip-rule="evenodd" />
-                                </svg>
+                                <div className="col-8 mb-3 mb-lg-0 text-end">
+                                    <div className="button-area">
+                                        <a href="" className="btn boton1">
+                                            Iniciar sesión
+                                        </a>
+                                        {" "}
+                                        <a href="" className="btn boton2">
+                                            Regístrate
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
-
-
-                        <div className="dropdown" id="mas-dropdown">
-                            <a href="#" className="d-flex align-items-center text-dark text-decoration-none dropdown-toggle"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <strong>MÁS</strong>
-                            </a>
-                            <ul className="dropdown-menu dropdown-menu-light text-small shadow" id="profile-dropdown">
-                                <li><a className="dropdown-item" href="/explorar">Explorar</a></li>
-                                <li>
-                                    <hr className="dropdown-divider" />
-                                </li>
-                                <li><a className="dropdown-item" href="#">Favoritos</a></li>
-                                <li>
-                                    <hr className="dropdown-divider" />
-                                </li>
-                                <li><a className="dropdown-item" href="#">Ayuda</a></li>
-                            </ul>
                         </div>
-                        <div className='button-area'> 
-                        <a href="/view/login" className="btn btn-secondary">Inicar sesion</a>
-                        <a href="/view/register" className="btn btn-primary">Registrate</a>
-                        </div>
+
                     </div>
                 </div>
             </nav>

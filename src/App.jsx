@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar"
-import './app.css'
 import Landing from "./views/Landing"
 import Footer from "./components/Footer"
 
