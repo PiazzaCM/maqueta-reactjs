@@ -24,6 +24,16 @@ const Landing = () => {
       {/* Agrega aquí el contenido adicional si es necesario */}
     </div>
     </div>
+
+
+    <div className='banda'>
+    <div className="cinta">
+      <div className="rounded text-center col-12 col-md-12 p-3 mb-3">
+        <h4 className="font-weight-bold text-white">PROFESORES RECOMENDADOS</h4>
+      </div>
+      {/* Agrega aquí el contenido adicional si es necesario */}
+    </div>
+    </div>
         </>
     )
 }
